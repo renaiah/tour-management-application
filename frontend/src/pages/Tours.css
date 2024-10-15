@@ -1,0 +1,45 @@
+.pagination span{
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border: 1px solid var(--secondary-color);
+    color: var(--heading-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+.active__page{
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+/* for loading animation */
+
+.loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border: 0.2rem solid #ccc;
+    border-top: 0.2rem solid #337ab7;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
